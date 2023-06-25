@@ -13,7 +13,7 @@ The Popular News iOS App is a sample application that fetches popular news artic
 The app follows the MVVM architecture pattern, which separates the concerns of data manipulation (Model), UI presentation (View), and business logic (ViewModel). Here's an overview of the architecture:
 
 <p align="center">
-  <img src ="https://github.com/Sajjad-Zafar/NYTimes/blob/feature/readme/MVVM.png?raw=true"/>
+  <img src ="https://github.com/Sajjad-Zafar/NYTimes/blob/main/MVVM.png?raw=true"/>
 </p>
 
 - Model: Represents the data entities used in the app, such as NewsModel and NewsResults.
