@@ -1,0 +1,61 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://interactive/56f794ef-9a38-528c-af07-657efa9da2a7",
+      "url": "https://www.nytimes.com/interactive/2023/upshot/spelling-bee-buddy.html",
+      "id": 100000008839905,
+      "asset_id": 100000008839905,
+      "source": "New York Times",
+      "published_date": "2023-04-10",
+      "updated": "2023-06-24 04:03:25",
+      "section": "The Upshot",
+      "subsection": "",
+      "nytdsection": "the upshot",
+      "adx_keywords": "internal-open-access",
+      "column": null,
+      "byline": "By Neil Berg, Matthew Conlen, Josh Katz, Aaron Krolik, Eve Washington and Eden Weingart",
+      "type": "Interactive",
+      "title": "Spelling Bee Buddy: Personalized Hints That Update as You Play",
+      "abstract": "Customized hints that update based on your progress in today’s puzzle.",
+      "des_facet": [
+        "internal-open-access"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "",
+          "caption": "",
+          "copyright": "",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-thumbStandard-v4.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-mediumThreeByTwo210-v4.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-mediumThreeByTwo440-v4.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}
