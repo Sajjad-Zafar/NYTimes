@@ -45,6 +45,7 @@ class NewsListingCell: UITableViewCell, ReusableCell {
         cancellable = viewModel.poster.sink { [unowned self] image in
             self.showImage(image: image)
         }
+        publishedDateLabel.text = viewModel.publishedDate
     }
 
     /// Displays the image in the image view with a cross dissolve animation.
