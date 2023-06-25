@@ -73,7 +73,7 @@ To run the NYTimes iOS App on your device or simulator:
 
 ## Demo
 <p align="left">
-  <img src ="https://github.com/Sajjad-Zafar/NYTimes/blob/main/demo.png?raw=true"/>
+  <img src ="https://github.com/Sajjad-Zafar/NYTimes/blob/main/demo.png?raw=true" alt="demo" width=300px/>
 </p>
 
 ## Contributing
