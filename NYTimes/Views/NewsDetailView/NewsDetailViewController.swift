@@ -28,6 +28,7 @@ final class NewsDetailViewController: UIViewController, StoryboardInstantiatable
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configUI()
         populateDetail()
     }
     
@@ -35,6 +36,12 @@ final class NewsDetailViewController: UIViewController, StoryboardInstantiatable
         _ = viewModel.transform(
             ViewModel.Input()
         )
+    }
+    
+    private func configUI() {
+        view.accessibilityIdentifier = AccessibilityIdentifiers.NewsDetail.rootViewId
+        titleLabel.accessibilityIdentifier = AccessibilityIdentifiers.NewsDetail.titleLabelId
+        abstractLabel.accessibilityIdentifier = AccessibilityIdentifiers.NewsDetail.descriptionLabelId
     }
     
     private func populateDetail() {

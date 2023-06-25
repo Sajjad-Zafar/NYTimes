@@ -44,12 +44,15 @@ final class NewsListingViewController: UIViewController, StoryboardInstantiatabl
     // MARK: - Private Functions
     /// Configures the UI appearance.
     private func configUI() {
+        view.accessibilityIdentifier = AccessibilityIdentifiers.NewsListing.rootViewId
+        activityIndicatorView.accessibilityIdentifier = AccessibilityIdentifiers.NewsListing.loadingViewID
         setupTableView()
     }
     
     /// Sets up the table view.
     private func setupTableView() {
         self.tableView.register(NewsListingCell.nib, forCellReuseIdentifier: NewsListingCell.reuseIdentifier)
+        tableView.accessibilityIdentifier = AccessibilityIdentifiers.NewsListing.tableViewId
         tableView.backgroundColor = .white
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = .zero
@@ -111,6 +114,7 @@ extension NewsListingViewController {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsListingCell.reuseIdentifier, for: indexPath) as? NewsListingCell else {
                     fatalError("Unable to dequeue reusable table view cell")
                 }
+                cell.accessibilityIdentifier = "\(AccessibilityIdentifiers.NewsListing.cellId).\(indexPath.row)"
                 cell.bind(to: newsModel)
                 return cell
             }
