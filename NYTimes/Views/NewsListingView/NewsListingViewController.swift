@@ -131,7 +131,8 @@ extension NewsListingViewController {
 extension NewsListingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewModel = self.viewModel.viewModel[indexPath.row]
-        print("\(viewModel.title)")
+        let newsDetail = NewsDetailViewController.instantiate(with: NewsDetailViewModel(newsViewModel: viewModel))
+        self.navigationController?.pushViewController(newsDetail, animated: true)
     }
 }
 

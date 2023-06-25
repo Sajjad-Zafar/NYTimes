@@ -1,0 +1,31 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run the tests for this project and generate a report"
+  lane :run_test do
+    path = Time.now.strftime('./build/code_coverage/%Y%m%dT%H.%M.%SZ/')
+    run_tests(
+      device: "iPhone 14",
+      scheme: "NYTimesTests",
+      output_directory: path,
+      buildlog_path: path,
+      clean: true,
+      disable_concurrent_testing: true)
+  end
+
+end

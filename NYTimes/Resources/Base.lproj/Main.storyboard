@@ -63,10 +63,134 @@
             </objects>
             <point key="canvasLocation" x="1991.6030534351144" y="-2.1126760563380285"/>
         </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="hRm-CY-Amt">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailViewController" id="BOj-Cw-dta" customClass="NewsDetailViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dvw-eB-hkn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZq-OA-VHF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-kI-dzV">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="776.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-S6-oVR">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="379.66666666666669"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrq-Dj-RDm">
+                                                <rect key="frame" x="0.0" y="379.66666666666674" width="393" height="397"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Vwt-WT-4Pe">
+                                                        <rect key="frame" x="20" y="20" width="353" height="357"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8VY-vQ-FQZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTZ-jg-5LT">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="20.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-hg-xed">
+                                                                        <rect key="frame" x="46.333333333333329" y="0.0" width="4" height="20.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB7-vi-81n">
+                                                                        <rect key="frame" x="54.333333333333343" y="0.0" width="298.66666666666663" height="20.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Five Lives Lost in the Titanic Submersible The Five Lives Lost in the Titanic Submersible" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e6-1u-1Z7">
+                                                                <rect key="frame" x="0.0" y="32.333333333333314" width="353" height="61"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-EX-AFp">
+                                                                <rect key="frame" x="0.0" y="105.33333333333331" width="353" height="175"/>
+                                                                <string key="text">On board the submersible were the founder of the company that operates the vessel; a British businessman and explorer; a British father and teenage son from a prominent Pakistani family; and a French maritime expert. asd On board the submersible were the founder of the company that operates the vessel; a British businessman and explorer; a British father and teenage son from a prominent Pakistani family; and a French maritime expert.</string>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Emma Bubola, Salman Masood and Victoria Kim By Emma Bubola, Salman Masood and Victoria Kim" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-kY-E8m">
+                                                                <rect key="frame" x="0.0" y="292.33333333333331" width="353" height="35"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published: 2023-06-09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6j-Uz-otc">
+                                                                <rect key="frame" x="0.0" y="339.33333333333331" width="353" height="17.666666666666686"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Vwt-WT-4Pe" secondAttribute="bottom" constant="20" id="R69-3t-jA9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Vwt-WT-4Pe" secondAttribute="trailing" constant="20" id="ad5-bI-tAC"/>
+                                                    <constraint firstItem="Vwt-WT-4Pe" firstAttribute="top" secondItem="wrq-Dj-RDm" secondAttribute="top" constant="20" id="nkY-JL-eFo"/>
+                                                    <constraint firstItem="Vwt-WT-4Pe" firstAttribute="leading" secondItem="wrq-Dj-RDm" secondAttribute="leading" constant="20" id="u0o-i1-Ot8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Knn-kI-dzV" firstAttribute="leading" secondItem="ckT-dd-5V9" secondAttribute="leading" id="4Nx-FV-fV3"/>
+                                    <constraint firstItem="Knn-kI-dzV" firstAttribute="leading" secondItem="bJc-MS-4Bo" secondAttribute="leading" id="5JQ-hm-0bI"/>
+                                    <constraint firstItem="ckT-dd-5V9" firstAttribute="trailing" secondItem="Knn-kI-dzV" secondAttribute="trailing" id="AET-0U-2DI"/>
+                                    <constraint firstItem="Knn-kI-dzV" firstAttribute="trailing" secondItem="bJc-MS-4Bo" secondAttribute="trailing" id="R2w-53-Nc8"/>
+                                    <constraint firstItem="jwf-S6-oVR" firstAttribute="height" secondItem="ckT-dd-5V9" secondAttribute="height" multiplier="0.5" id="RZc-3j-gNF"/>
+                                    <constraint firstItem="Knn-kI-dzV" firstAttribute="top" secondItem="bJc-MS-4Bo" secondAttribute="top" id="qJm-fj-4KQ"/>
+                                    <constraint firstItem="Knn-kI-dzV" firstAttribute="bottom" secondItem="bJc-MS-4Bo" secondAttribute="bottom" id="zJ0-0M-hXW"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="bJc-MS-4Bo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ckT-dd-5V9"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3k4-ml-Zgc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JZq-OA-VHF" firstAttribute="top" secondItem="3k4-ml-Zgc" secondAttribute="top" id="9FY-jS-5D5"/>
+                            <constraint firstItem="3k4-ml-Zgc" firstAttribute="trailing" secondItem="JZq-OA-VHF" secondAttribute="trailing" id="Fw5-SQ-8p3"/>
+                            <constraint firstItem="JZq-OA-VHF" firstAttribute="leading" secondItem="3k4-ml-Zgc" secondAttribute="leading" id="OcA-PY-EKx"/>
+                            <constraint firstItem="3k4-ml-Zgc" firstAttribute="bottom" secondItem="JZq-OA-VHF" secondAttribute="bottom" id="Xqn-jA-GhA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abstractLabel" destination="sSo-EX-AFp" id="jKP-A9-0QQ"/>
+                        <outlet property="byLineLabel" destination="LlO-kY-E8m" id="2fx-1L-Yma"/>
+                        <outlet property="newsImageView" destination="jwf-S6-oVR" id="e2o-yG-gq6"/>
+                        <outlet property="publishedDateLabel" destination="a6j-Uz-otc" id="19A-HE-8bZ"/>
+                        <outlet property="sectionLabel" destination="YB7-vi-81n" id="Cng-CB-aha"/>
+                        <outlet property="titleLabel" destination="2e6-1u-1Z7" id="fWI-lB-6gT"/>
+                        <outlet property="typeLabel" destination="UTZ-jg-5LT" id="bcb-46-KKr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snC-dH-3nB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2817.5572519083967" y="-2.1126760563380285"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="image1" width="1000" height="750"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
