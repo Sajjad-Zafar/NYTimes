@@ -18,7 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Run the tests for this project and generate a report"
   lane :run_test do
-    path = Time.now.strftime('./build/code_coverage/%Y%m%dT%H.%M.%SZ/')
+    path = Time.now.strftime('./fastlane/code_coverage/')
     run_tests(
       device: "iPhone 14",
       scheme: "NYTimesTests",

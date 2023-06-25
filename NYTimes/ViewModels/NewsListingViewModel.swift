@@ -76,7 +76,7 @@ class NewsListingViewModel: ViewModelType {
             .flatMap({ [unowned self] in
                 self.fetchMostPopularNews()
             })
-            .map({ result -> NewsListingState in
+            .map({ [unowned self] result -> NewsListingState in
                 switch result {
                 case .success(let news):
                     return .success(self.viewModels(from: news.results))
