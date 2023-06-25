@@ -137,6 +137,7 @@
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="NewsDetail.contentViewId"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Vwt-WT-4Pe" secondAttribute="bottom" constant="20" id="R69-3t-jA9"/>
                                                     <constraint firstAttribute="trailing" secondItem="Vwt-WT-4Pe" secondAttribute="trailing" constant="20" id="ad5-bI-tAC"/>
