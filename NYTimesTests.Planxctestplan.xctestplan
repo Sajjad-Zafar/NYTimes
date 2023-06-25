@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "9C893F5F-ADF2-4665-AC98-1938D072AF05",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:NYTimes.xcodeproj",
+        "identifier" : "B34A638D2A46DE2600AA015C",
+        "name" : "NYTimesTests"
+      }
+    }
+  ],
+  "version" : 1
+}
