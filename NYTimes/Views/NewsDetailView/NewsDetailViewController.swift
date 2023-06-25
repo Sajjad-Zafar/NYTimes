@@ -61,8 +61,8 @@ final class NewsDetailViewController: UIViewController, StoryboardInstantiatable
         UIView.transition(with: self.newsImageView,
             duration: 0.3,
             options: [.curveEaseOut, .transitionCrossDissolve],
-            animations: {
-                self.newsImageView.image = image
+            animations: { [weak self] in
+                self?.newsImageView.image = image
         })
     }
     

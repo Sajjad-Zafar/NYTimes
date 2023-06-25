@@ -72,8 +72,8 @@ final class NewsListingViewController: UIViewController, StoryboardInstantiatabl
         )
         appear.send()
         output.result
-            .sink(receiveValue: { state in
-                self.render(state)
+            .sink(receiveValue: { [weak self] state in
+                self?.render(state)
             })
             .store(in: &cancellables)
     }

@@ -11,8 +11,6 @@ import Combine
 
 class MockNetworkService: NetworkServiceType {
     private let session: URLSession
-    var mockResponse: Result<Any, Error>?
-    var loadCalled = false
     
     init(session: URLSession = URLSession(configuration: .default)) {
         self.session = session
